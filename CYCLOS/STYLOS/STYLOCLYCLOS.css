@@ -1,0 +1,365 @@
+
+/* Media Querys */
+
+@media (max-width:768px) {  /* max= hasta... */
+  header body footer {
+      background-color: tomato;
+  }
+  header body footer {
+      display: grid;
+      max-width: 100%;
+  }
+  .Cuadrados-Informativos {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width:769px) and (max-width:919px){
+  /* desde 769 hasta 899 */
+  header body footer {
+      display: grid;
+      max-width: 100%;
+  }  
+  }
+
+
+@media (min-width:920px){ /* a partir de.... */
+  header body footer {
+      background-color: aqua;
+      display: grid;
+      max-width: 100%;
+  } 
+
+
+}
+
+@media (min-width:768px) { 
+  header body footer {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* media */
+@media (min-width:368px) {
+  header body footer {
+  grid-template-columns: 1fr;
+  }
+  
+  header body footer{
+  display: grid;  
+}
+
+.Cuadrados-Informativos {
+  display: grid;
+  grid-template-columns: auto;
+  
+}
+
+}
+   
+   
+   /* Header Arranca aca--------------------------------------------------------------------------------------------------------- */
+  
+  
+   /* Header Principal */
+  * {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+  }
+  
+  /* Tipografia Montserrat Medium 500 , Montserrat light ,Montserrat Regular */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+  /* Header tipografia */
+  li , a , button {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-display: swap; 
+    text-decoration: none;
+  }
+  
+  /* Header Principal Stylo Flexbox */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+  }
+
+  /* Logo Señalador */
+  .Logo {
+    cursor: pointer;
+    margin-right: auto ;
+  }
+
+  .navegacion_principal {
+    list-style: none;
+  }
+  
+  /* Lista Orden */
+  .navegacion_principal li {
+    display: inline-block;
+    padding: 0px 20px;
+
+  }
+
+  /* Tiempo Color */
+  .navegacion_principal li a {
+    transition: all 0.3s ease 0s;
+
+  }
+  
+  /* Botton Hover */
+  .navegacion_principal li a:hover {
+    color: blue;
+  }
+  
+  /* Botton Stylo */
+  button {
+    padding: 9px 25px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+  }
+
+  button:hover {
+    background-color: rgba(7, 0, 75, 0.4);
+  }  
+ /* Header Termina aca--------------------------------------------------------------------------------------------------------- */
+
+ /* Estilos para el texto principal */
+ .textos_main_principal {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.textos_main_principal h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.textos_main_principal h3 {
+  font-size: 24px;
+  color: #666;
+  margin-top: 20px;
+}
+
+ /* Slider Arranca aca--------------------------------------------------------------------------------------------------------- */
+ body { 
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  justify-self: center;
+  align-items: center;
+  background-color: white;
+ }
+
+ .Section.slider {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+
+ .Slider {
+  width:800px ;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+
+ }
+
+ .Slide {
+  width: 500%;
+  height: 500px;
+  display: flex;
+
+ }
+
+ .Slide input { 
+  display: none;
+ }
+
+ .Imagenes {
+  width: 20%;
+  transition: 2s;
+ }
+
+ .Imagenes img {
+  width: 800px;
+  height: 500px;
+ }
+
+ .Navi {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+
+ }
+
+ .m-btn {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+ }
+
+ .m-btn:not(:last-child) { 
+  margin-right: 30px;
+ }
+
+ .m-btn:hover {
+  background-color: blue;
+ }
+
+ #Radio1:checked ~.Imagenes{ 
+  margin-left: 0;
+ }
+
+ #Radio2:checked ~.Imagenes{ 
+  margin-left: -20;
+ }
+ 
+ #Radio3:checked ~.Imagenes{ 
+  margin-left: -40;
+ }
+
+ #Radio4:checked ~.Imagenes{ 
+  margin-left: -60;
+ }
+
+ .Nav-Auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+
+ }
+
+ .Nav-Auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+ }
+
+ .Nav-Auto div:not(:last-child) {
+  margin-right: 30px;
+  justify-content: center;
+ }
+
+ #Radio1:checked ~ .Nav-Auto .a-b1 {
+  background-color: blue;
+ }
+
+ #Radio2:checked ~ .Nav-Auto .a-b2 {
+  background-color: blue;
+ }
+
+ #Radio3:checked ~ .Nav-Auto .a-b3 {
+  background-color: blue;
+ }
+
+ #Radio4:checked ~ .Nav-Auto .a-b4 {
+  background-color: blue;
+ }
+
+ /* Slider Termina aca--------------------------------------------------------------------------------------------------------- */
+
+
+
+
+ /* Corta Pantallas --------------------------------------------------------------------------------------------------------- */
+
+ .Corta-Pantallas {
+  background-color: #000;
+  color: #fff;
+  padding: 80px;
+  width: 100%;
+}
+ /* Corta Pantallas Termina Aca --------------------------------------------------------------------------------------------------------- */
+
+
+
+
+ /* Cuadrados Informativos Arranca aca--------------------------------------------------------------------------------------------------------- */
+ 
+ 
+ /* Cuadrados informativos Css grid*/
+  .Cuadrados-Informativos {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  /* Card Stylo */
+  .card {
+    width: 400px;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  /* Card Titulo */
+  .card h3 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Card Texto */
+  .card p {
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+
+  /* Cuadrados Informativos Termina aca--------------------------------------------------------------------------------------------------------- */
+ 
+
+
+
+  /* Footer --------------------------------------------------------------------------------------------------------- */
+    #footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      width: 100%;
+      height: 250px;
+      display: grid;
+    }
+    
+    .contendor_footer_datos {
+      text-align: center;
+      
+    }
+    
+    .contendor_footer_datos p {
+      margin: 5px 0;
+    }
+
+    /* Footer Termina Aca--------------------------------------------------------------------------------------------------------- */
+

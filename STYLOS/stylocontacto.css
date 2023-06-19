@@ -151,111 +151,137 @@ height: 100px;
   }
 /* Cuadrado Principal Con Texto Termina aca --------------------------------------------------------------------------------------------------------- */
 
-
-/* SliderShow Arranca Aca --------------------------------------------------------------------------------------------------------- */
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 7));
-    }
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 7));
-    }
-  }
-  .slider {
-    background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  .slider::before, .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-  .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
-  .slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
-  .slider .slide {
-    height: 100px;
-    width: 250px;
-  }
-/* SliderShow Termina Aca --------------------------------------------------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 
-/* Cards Con Imagenes --------------------------------------------------------------------------------------------------------- */
-
-  .espacioblanco {
-    max-width: 100px;
-    height: 150px;
-  }
-  
-  .fondo_contenedor {
-    background-color: rgb(221, 221, 221);
-    max-width: 100%;
-    height: 900px;
-  }
-  
-  .Nuestros_servicios {
-  margin-bottom: 50px;
-  }
-
-  .col p {
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: 400;
-  }
-
-.card-body {
-    margin-bottom: 50px;
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #dbdbdb; 
 }
 
-/* Cards con Imagenes Termina aca --------------------------------------------------------------------------------------------------------- */
 
-  .espacioblanco2 {
-    max-width: 500px;
-    height: 150px;
-  }
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
 
-  .fondo_contenedor2 { 
-    max-width: 100%;
-    height: 1000px;
-  }
 
-  .Encontra_Servicio {
-    margin-bottom: 80px;
-  }
- 
-  .card-img-top1 {
-    width: 20%;
-  }
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #3a00db; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #3a00db; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #3a00db; 
+  border-color: #3a00db; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #3a00db; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #3a00db;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
 
 /* Footer Bloque --------------------------------------------------------------------------------------------------------- */
  

@@ -208,7 +208,7 @@ label{
 }
 
 
-button{
+.contact_form button {
   height: 45px; 
   padding-left: 5px;
   padding-right: 5px;   
@@ -314,6 +314,7 @@ p{
     display: grid;
   }
 
+
   .contendor_footer_datos {
     text-align: center;
   
@@ -321,6 +322,7 @@ p{
 
   .contendor_footer_datos p {
     margin: 5px 0;
+    color: #fbfbfb;
   }
 
 /* Footer Termina Aca--------------------------------------------------------------------------------------------------------- */
